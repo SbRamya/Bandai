@@ -1,0 +1,127 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(39, 40, 42);  
+}
+
+.menu-icon {
+  display: none;
+}
+.navbar {
+  height: 55px;
+  color: white;
+  position: relative;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
+  background-color: grey;
+  
+}
+.icon-style{
+  color: black;
+  margin-bottom: 10px;
+  font-size: 30px;
+  text-decoration: none;
+  vertical-align: top;
+
+}
+
+
+.nav-elements ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.nav-elements ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-right: 35px;
+}
+.nav-elements ul a {
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+}
+.nav-elements ul li i {
+  font-size: 25px;
+  color: black;
+  margin-right: 7px;
+}
+
+ .nav-elements ul li a::after {
+  content: "";
+  width: 0%;
+  background-color: rgb(203, 64, 64);
+  height: 3px;
+  display: flex;
+  transition: 0.5s;
+} 
+.nav-elements ul li a:hover::after {
+  width: 100%;
+}
+.nav-elements ul a.active {
+  color: blue;
+} 
+
+
+@media (max-width: 992px) {
+  .container {
+    padding: 5.5vw;
+    height:5vh;
+  }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    color: white;
+    font-size: 35px;
+    z-index: 4;
+  }
+
+  .menu-icon-cross {
+    display: block;
+    cursor: pointer;
+    color: black;
+    font-size: 35px;
+    z-index: 4;
+  }
+
+  .menu-icon-cross-svg {
+    padding:10px;
+  }
+
+  .nav-elements {
+    position: absolute;
+    width: 0px;
+    height: 100vh;
+    overflow: hidden;
+    left: 0%;
+    top: 0;
+    transition: all 0.3s ease-in;
+    background-color: black;
+  }
+  .nav-elements.active {
+    width: 200px;
+    background-color: white;
+    transition: 0.8s;
+  }
+  .nav-elements ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    padding-left: 20px;
+  }
+  .nav-elements ul li {
+    margin-right: auto;
+    margin-top: 22px;
+  }
+  
+}
