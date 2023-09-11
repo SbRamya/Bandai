@@ -27,6 +27,7 @@ const Carousel1 = () => {
   ];
 
   return (
+    <div className="carousel">
     <Carousel controls="true">
       {images.map((imageSlide) => (
         <Carousel.Item key={imageSlide.id}>
@@ -40,7 +41,7 @@ const Carousel1 = () => {
         </Carousel.Item>
       ))}
     </Carousel>
-    
+    </div>
   );
  
 };

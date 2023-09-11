@@ -4,6 +4,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Toys from "./Pages/Toys";
 import Carousel from "./components/carousel/carousel";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
