@@ -3,13 +3,13 @@ import "./Navbar.css";
 import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import logo from "../../images/logo.png";
-import Greatersign from "../../Assert/Greatersign.svg";
-import Location from "../../Assert/Location.svg";
-import Signin from "../../Assert/Signin.svg";
-import Search from "../../Assert/Search.svg";
-import Cart from "../../Assert/Cart.svg";
-import Menubar from "../../Assert/Menubar.svg";
-import MenuCancel from "../../Assert/MenuCancel.svg";
+import Greatersign from "../../Asset/Greatersign.svg";
+import Location from "../../Asset/Location.svg";
+import Signin from "../../Asset/Signin.svg";
+import Search from "../../Asset/Search.svg";
+import Cart from "../../Asset/Cart.svg";
+import Menubar from "../../Asset/Menubar.svg";
+import MenuCancel from "../../Asset/MenuCancel.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -38,7 +38,7 @@ const Navbar = () => {
               <img className="logo" src={logo} alt="logo" />
               <img className="icon" src={MenuCancel} alt="" />
                 <ul>
-                <hr class="solid"></hr>
+                <hr className="solid"></hr>
                   <li>
                     <img className="icon" src={Greatersign} alt=""></img>
                     <NavLink to="/Toys">Toys</NavLink>
@@ -59,7 +59,7 @@ const Navbar = () => {
                     <img className="icon" src={Greatersign} alt=""></img>
                     <NavLink to="/About">About Us</NavLink>
                   </li>
-                  <hr class="solid"></hr>
+                  <hr className="solid"></hr>
                   
                   <li>
                     <img className="icon" src={Signin} alt=""></img>
@@ -69,7 +69,7 @@ const Navbar = () => {
                     <img className="icon" src={Location} alt=""></img>
                     <NavLink to="/Search">Store Search</NavLink>
                   </li>
-                  <hr class="solid"></hr>
+                  <hr className="solid"></hr>
                   <li>
                     <img className="icon" src={Greatersign} alt=""></img>
                     <NavLink to="/Service">Customer Service</NavLink>
@@ -91,10 +91,11 @@ const Navbar = () => {
             <img className="icon" src={Menubar} alt="" />
           )}
         </div>
-
+        <Link to={"/"}>
         <div className="item1">
           <img alt="logo" src={logo} />
         </div>
+        </Link>
         <Link>
           <img className="icon" src={Search} alt=""></img>
         </Link>

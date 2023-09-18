@@ -28,7 +28,7 @@ const Carousel1 = () => {
 
   return (
     <div className="carousel">
-    <Carousel infiniteLoop="true" showStatus="false">
+    <Carousel showThumbs={false}  infiniteLoop="true" showStatus="false">
       {images.map((imageSlide) => (
         <div key={imageSlide.id}>
           <Link to="/">

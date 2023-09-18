@@ -13,7 +13,7 @@ body {
 
 .container {
   display:flex;
-  justify-content: center;
+  justify-content: space-around;
   padding: 1em;
   align-items: center;
   overflow: hidden;

@@ -1,16 +1,15 @@
 import React from "react";
-import Countdown from "../components/countdown/countdown";
 import Navbar from "../components/navbar/Navbar";
+import Carousel from "../components/carousel/carousel";
 import Marquee from "../components/marquee/marquee"
-const Toys = () => {
+const Home = () => {
     return (
         <div>
         <Navbar/>
         <Marquee text="ban presto now available from premium bandai ///////// ban presto now available from premium bandai ///////// ban presto now available from premium bandai ///////// ban presto now available from premium bandai ///////// ban presto now available from premium bandai ///////// ban presto now available from premium bandai ///////// " color="Red" />
-     <Countdown saledate="2023-09-20T17:05:05" position = "Vertical"/>
-    {/*  <Countdown saledate="2023-09-20T17:05:05" position = "Horizontal"/> */}
-     </div>
+        <Carousel/>
+        </div>
     );
 };
 
-export default Toys;
+export default Home;

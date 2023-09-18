@@ -1,0 +1,55 @@
+
+.coundown{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    width: inherit;
+    height: 44rem;
+    background-image: url("../../Asset/Countdownbg.svg");
+    background-repeat: no-repeat;
+}
+
+.coundown h2{
+    margin: 0;
+    padding: 0;
+    width:1em;
+    height:1em;
+}
+
+.secretHeading{
+    font-size: 32px;
+    color: white;
+    font-weight: bolder;
+    padding-top: 3em;
+    padding-left: 3em;
+}
+
+.timer.Vertical{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 96px;
+    color: white;
+}
+
+.timer.Horizontal{
+    display: flex;
+    padding:25px;
+    flex-direction: row;
+    align-items: center;
+    font-size: 96px;
+    color: white;
+}
+
+.timer.Horizontal .time{
+    padding:5px;
+
+}
+
+.timertext{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+}
+
